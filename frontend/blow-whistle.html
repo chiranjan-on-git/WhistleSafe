@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blow the Whistle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Blow the Whistle</h1>
+  <form action="http://127.0.0.1:8000/submit-report" method="post" enctype="multipart/form-data">
+    <label>Category (required):</label>
+    <select name="category" required>
+      <option value="corruption">Corruption</option>
+      <option value="fraud">Fraud</option>
+      <option value="harassment">Harassment</option>
+      <option value="discrimination">Discrimination</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label>Heading (required):</label><br>
+    <input type="text" name="heading" required><br><br>
+
+    <label>Body (required):</label><br>
+    <textarea name="body" rows="5" required></textarea><br><br>
+
+    <label>Location (optional):</label><br>
+    <input type="text" name="location"><br><br>
+
+    <label>Upload file (optional, max 200MB):</label><br>
+    <input type="file" name="file"><br><br>
+
+    <button type="submit">Submit Report</button>
+  </form>
+</body>
+</html>
