@@ -1,48 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Important for responsiveness -->
-    <title>WhistleSafe</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
-    <!-- Remove any <style> blocks from HTML if they conflict -->
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #f4f4f4;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
-        .nav-button {
-            background-color: #007BFF;
-            color: white;
-            padding: 15px 30px;
-            margin: 10px;
-            border: none;
-            border-radius: 10px;
-            font-size: 1.1em;
-            cursor: pointer;
-            transition: 0.2s ease;
-        }
-        .nav-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhistleSafe - Secure Whistleblowing Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to WhistleSafe</h1>
-    
-    <button class="nav-button" onclick="location.href='blow-whistle.html'">
-        Blow the Whistle
-    </button>
+    <div class="hero-container">
+        <header class="main-header">
+            <div class="logo">
+                <i class="fas fa-whistle"></i>
+                <span>WhistleSafe</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#" class="active">Home</a>
+                <a href="blow-whistle.html">Report</a>
+                <a href="know-whistle.html">Cases</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
 
-    <button class="nav-button" onclick="location.href='know-whistle.html'">
-        Know the Whistle
-    </button>
+        <div class="hero-content">
+            <h1>Speak Up <span class="highlight">Safely</span></h1>
+            <p class="subtitle">Your voice matters. Report misconduct anonymously and securely with our protected whistleblowing platform.</p>
+            
+            <div class="cta-buttons">
+                <a href="blow-whistle.html" class="btn primary">
+                    <i class="fas fa-bullhorn"></i> Make a Report
+                </a>
+                <a href="know-whistle.html" class="btn secondary">
+                    <i class="fas fa-search"></i> View Cases
+                </a>
+            </div>
+        </div>
 
+        <div class="security-badge">
+            <i class="fas fa-lock"></i>
+            <span>End-to-end encrypted</span>
+        </div>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-user-shield"></i>
+            </div>
+            <h3>Complete Anonymity</h3>
+            <p>Your identity remains protected throughout the entire process.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-file-shield"></i>
+            </div>
+            <h3>Secure Documentation</h3>
+            <p>Upload evidence safely with military-grade encryption.</p>
+        </div>
+        
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Case Tracking</h3>
+            <p>Monitor the progress of your report without revealing your identity.</p>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>WhistleSafe</h4>
+                <p>Promoting transparency and accountability through secure whistleblowing.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="blow-whistle.html">Make a Report</a></li>
+                    <li><a href="know-whistle.html">View Cases</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 WhistleSafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.main-nav').classList.toggle('show');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

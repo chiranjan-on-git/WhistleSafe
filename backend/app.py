@@ -130,7 +130,6 @@ def get_reports():
                 data = json.loads(content)
                 if not isinstance(data, list):
                      raise ValueError("Invalid report file format: root element is not a list.")
-        data.sort(key=lambda x: x.get("date", "1970-01-01 00:00:00"), reverse=True)
         print(f"--- Successfully read and returning {len(data)} reports. ---")
         return data
     except FileNotFoundError:
@@ -153,6 +152,7 @@ async def download_file(filename: str):
     print(f"--- Download request for: {filename} ---")
     file_path = os.path.join(UPLOAD_DIR_ABS, filename)
     print(f"--- Looking for file at: {file_path} ---")
+    filename = "info"
 
     if os.path.isfile(file_path):
         # Return FileResponse:
