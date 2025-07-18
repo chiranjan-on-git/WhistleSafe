@@ -41,7 +41,7 @@ WhistleSafe is a secure and anonymous whistleblowing platform designed to empowe
 
 ## Project Structure
 
-<img width="380" height="474" alt="image" src="https://github.com/user-attachments/assets/ac8cca0c-db33-4b31-a5f2-a504bd423dc0" width = "400"/>
+<img width="380" height="474" alt="image" src="https://github.com/user-attachments/assets/ac8cca0c-db33-4b31-a5f2-a504bd423dc0" width = "250"/>
 
 
 ## Getting Started
