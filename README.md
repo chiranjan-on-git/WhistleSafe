@@ -1,7 +1,5 @@
-Okay, I've revised the README.md to remove the "Licensing," "Contributing" sections, and all emojis.
-
-Generated markdown
 # WhistleSafe: Secure & Anonymous Whistleblowing Platform
+![1745262298707](https://github.com/user-attachments/assets/88e051bd-e35f-4a66-b01d-ab30f470c966)
 
 ## Project Overview
 
