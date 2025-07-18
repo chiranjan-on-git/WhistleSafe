@@ -1,5 +1,8 @@
 # WhistleSafe: Secure & Anonymous Whistleblowing Platform
-![1745262298707](https://github.com/user-attachments/assets/88e051bd-e35f-4a66-b01d-ab30f470c966)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2c86e970-69c5-4244-aaf2-73609030b5e8" width="600" alt="image"/>
+</p>
 
 ## Project Overview
 
@@ -38,24 +41,9 @@ WhistleSafe is a secure and anonymous whistleblowing platform designed to empowe
 
 ## Project Structure
 
+<img width="380" height="474" alt="image" src="https://github.com/user-attachments/assets/ac8cca0c-db33-4b31-a5f2-a504bd423dc0" />
 
-WhistleSafe/
-├── backend/ # FastAPI application and backend logic
-│ ├── uploads/ # Directory to store uploaded evidence files
-│ ├── app.py # Main FastAPI application, defines API routes
-│ ├── blockchain_mock.py # Mock blockchain hashing function
-│ ├── db.py # Database interaction functions (reports.json handler)
-│ ├── nlp.py # Natural Language Processing logic for report analysis
-│ └── requirements.txt # Python dependencies for the backend
-├── frontend/ # Static frontend files (HTML, CSS, JS)
-│ ├── blow-whistle.html # Form for submitting new reports
-│ ├── index.html # Homepage/landing page
-│ ├── know-whistle.html # Page to view and manage submitted reports
-│ └── style.css # Global CSS styles for the frontend
-├── venv/ # Python virtual environment (managed by pipenv or venv)
-└── reports.json # JSON file acting as the persistent storage for all reports
 
-Generated code
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
@@ -167,8 +155,3 @@ The backend FastAPI application exposes the following endpoints:
 ---
 
 **WhistleSafe** – Speak Up Safely. Your Voice Matters.
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
